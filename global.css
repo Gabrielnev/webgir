@@ -114,9 +114,48 @@ nav {
     
     .nav-links.active {
         display: flex;
+    
+    
     }
     
     .menu-toggle {
+        margin-left: -400px;
         display: flex;
+    }
+}
+
+/* Layout Container */
+.layout-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    flex: 1; /* Faz o contêiner ocupar o máximo de espaço possível */
+    margin-right: 20px; /* Espaço entre o contêiner e a imagem */
+}
+
+/* Image Container */
+.image-container {
+    flex: 1; /* Faz a imagem ocupar o máximo de espaço possível */
+}
+
+.image-container img {
+    width: 100%; /* Ajusta a imagem para ocupar todo o espaço do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+}
+
+.logo{
+    margin-right: 10%;
+}
+
+@media (max-width: 600px){
+    .logo{
+        width: 100px;
+        margin: auto;
     }
 }
