@@ -1,4 +1,15 @@
-                /* Definições básicas para o corpo e fundo */
+
+
+
+
+/* Definições básicas para o corpo e fundo */
+                             html{
+                            scroll-behavior: smooth;
+                            transition: 2s;
+
+                     }       
+
+
                 body {
                     background-color: #121212; /* Cor de fundo escura */
                     color: #e0e0e0; /* Cor do texto clara */
@@ -59,6 +70,9 @@
                     padding: 10px;
                     border-bottom: 1px solid #44d474; /* Borda inferior do menu */
                     position: relative;
+                    position: fixed; 
+                    width: 100% ;
+                    top: 0;
                 }
 
                 .menu-toggle {
@@ -135,6 +149,7 @@
                     align-items: center; /* Alinha verticalmente ao centro */
                     justify-content: space-between; /* Espaça os itens igualmente */
                     padding: 20px;
+                    margin-top:7%;
                 }
 
                 /* Container */
@@ -150,6 +165,7 @@
 
                 .image-container img {
                     width: 100%; /* Ajusta a imagem para ocupar todo o espaço do contêiner */
+                    margin: auto;
                     height: auto; /* Mantém a proporção da imagem */
                     border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
                 }
@@ -189,8 +205,71 @@
 }
 
 
+#img-servicos{
+
+width: 50%;
 
 
+
+}
+/* Layout Container para "Quem somos" */
+#quemsomos {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+#quemsomos .title {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+#quemsomos .title h1 {
+    margin: 0; /* Remove a margem padrão do <h1> */
+    margin-bottom: 30px;
+}
+
+#quemsomos .content {
+    display: flex; /* Organiza o texto e a imagem lado a lado */
+    align-items: flex-start; /* Alinha o texto e a imagem no topo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+    gap: 20px; /* Espaço entre o texto e a imagem */
+}
+
+#quemsomos .text {
+    max-width: 600px; /* Limita a largura do texto */
+    
+}
+
+#quemsomos .image-container {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+#quemsomos .image-container img {
+    width: 100%; /* Ajusta a imagem para ocupar o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+/* Estilo personalizado para o botão vazado */
+.btn-vazado {
+    border: 2px solid #44d474; /* Cor da borda */
+    color: #44d474; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 15px 45px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado (para links) */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    
+}
+
+.btn-vazado:hover {
+    background-color: #44d474; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
 
 
 
