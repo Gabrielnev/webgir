@@ -1,182 +1,172 @@
-/* Definições básicas para o corpo e fundo */
-html{
-    scroll-behavior: smooth;
-    transition: 2s;
-}       
+                /* Definições básicas para o corpo e fundo */
+                body {
+                    background-color: #121212; /* Cor de fundo escura */
+                    color: #e0e0e0; /* Cor do texto clara */
+                    font-family: Arial, sans-serif; /* Fonte padrão */
+                }
+
+                /* Cabeçalhos */
+                h1, h2, h3, h4, h5, h6 {
+                    color: #f5f5f5; /* Cores dos cabeçalhos mais claras */
+                }
+
+                /* Links */
+                a {
+                    color: #bb86fc; /* Cor dos links */
+                }
+
+                a:hover {
+                    color: #82b1ff; /* Cor dos links quando passar o mouse */
+                }
+
+                /* Fundo dos containers */
+                .container {
+                    background-color: #1e1e1e; /* Cor de fundo dos containers */
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+
+                /* Botões */
+                button {
+                    background-color: #333333; /* Cor de fundo dos botões */
+                    color: #ffffff; /* Cor do texto dos botões */
+                    border: 1px solid #444444; /* Cor da borda dos botões */
+                    padding: 10px 20px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: #555555; /* Cor de fundo dos botões ao passar o mouse */
+                }
+
+                /* Formulários */
+                input, textarea {
+                    background-color: #333333; /* Cor de fundo dos inputs e textareas */
+                    color: #ffffff; /* Cor do texto dos inputs e textareas */
+                    border: 1px solid #444444; /* Cor da borda dos inputs e textareas */
+                    padding: 10px;
+                    border-radius: 4px;
+                }
+
+                input::placeholder {
+                    color: #888888; 
+                }
+
+                /* Menu de navegação */
+                nav {
+                    
+                    padding: 10px;
+                    border-bottom: 1px solid #44d474; /* Borda inferior do menu */
+                    position: relative;
+                }
+
+                .menu-toggle {
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    padding: 15px;
+                }
+
+                .bar {
+                    width: 25px;
+                    height: 3px;
+                    background-color: #d0cdd0; /* Cor das barras do menu hambúrguer */
+                    margin: 3px 0;
+                }
+
+                .nav-links {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .nav-links li {
+                    margin: 0 15px;
+                }
+
+                .nav-links a {
+                    color: #ffffff; /* Cor dos links do menu */
+                    text-decoration: none;
+                    font-size: 16px;
+                    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+                    padding: 15px 15px; /* Espaçamento interno do botão */
+                    margin: auto;
+                    text-decoration: none; /* Remove o sublinhado (para links) */
+                   cursor: pointer; /* Cursor de mão ao passar o mouse */
+                }
+
+                .nav-links a:hover {
+                    color: #ebedf1; /* Cor dos links do menu ao passar o mouse */
+                }
+
+                /* Responsividade */
+                @media (max-width: 768px) {
+                    .nav-links {
+                        display: none;
+                        flex-direction: column;
+                        width: 100%;
+                        position: absolute;
+                        top: 60px; /* Ajuste conforme necessário */
+                        left: 0;
+                        background-color: #000000; /* Cor de fundo do menu hambúrguer */
+                        border-bottom: 1px solid #7b6e6e;
+                    }
+                    
+                    .nav-links.active {
+                        display: flex;
+                    
+                    
+                    }
+                    
+                    .menu-toggle {
+                        margin-left: -400px;
+                        display: flex;
+                    }
+                }
+
+                /* Layout Container */
+                .layout-container {
+                    display: flex;
+                    align-items: center; /* Alinha verticalmente ao centro */
+                    justify-content: space-between; /* Espaça os itens igualmente */
+                    padding: 20px;
+                }
+
+                /* Container */
+                .container {
+                    flex: 1; /* Faz o contêiner ocupar o máximo de espaço possível */
+                    margin-right: 20px; /* Espaço entre o contêiner e a imagem */
+                }
+
+                /* Image Container */
+                .image-container {
+                    flex: 1; /* Faz a imagem ocupar o máximo de espaço possível */
+                }
+
+                .image-container img {
+                    width: 100%; /* Ajusta a imagem para ocupar todo o espaço do contêiner */
+                    height: auto; /* Mantém a proporção da imagem */
+                    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+                }
+
+                .logo{
+                    margin-right: 10%;
+                }
+
+                @media (max-width: 600px){
+                    .logo{
+                        width: 100px;
+                        margin: auto;
+                    }
+                }
 
 
-body {
-    background-color: #121212; /* Cor de fundo escura */
-    color: #e0e0e0; /* Cor do texto clara */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-}
-
-/* Cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
-    color: #f5f5f5; /* Cores dos cabeçalhos mais claras */
-}
-
-/* Links */
-a {
-    color: #bb86fc; /* Cor dos links */
-}
-
-a:hover {
-    color: #82b1ff; /* Cor dos links quando passar o mouse */
-}
-
-/* Fundo dos containers */
-.container {
-    background-color: #1e1e1e; /* Cor de fundo dos containers */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Botões */
-button {
-    background-color: #333333; /* Cor de fundo dos botões */
-    color: #ffffff; /* Cor do texto dos botões */
-    border: 1px solid #444444; /* Cor da borda dos botões */
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555555; /* Cor de fundo dos botões ao passar o mouse */
-}
-
-/* Formulários */
-input, textarea {
-    background-color: #333333; /* Cor de fundo dos inputs e textareas */
-    color: #ffffff; /* Cor do texto dos inputs e textareas */
-    border: 1px solid #444444; /* Cor da borda dos inputs e textareas */
-    padding: 10px;
-    border-radius: 4px;
-}
-
-input::placeholder {
-    color: #888888; 
-}
-
-/* Menu de navegação */
-nav {
-    
-    padding: 10px;
-    border-bottom: 1px solid #44d474; /* Borda inferior do menu */
-    position: relative;
-    position: fixed; 
-    width: 100% ;
-    top: 0;
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 15px;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #d0cdd0; /* Cor das barras do menu hambúrguer */
-    margin: 3px 0;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #ffffff; /* Cor dos links do menu */
-    text-decoration: none;
-    font-size: 16px;
-    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
-    padding: 15px 15px; /* Espaçamento interno do botão */
-    margin: auto;
-    text-decoration: none; /* Remove o sublinhado (para links) */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
-}
-
-.nav-links a:hover {
-    color: #ebedf1; /* Cor dos links do menu ao passar o mouse */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Ajuste conforme necessário */
-        left: 0;
-        background-color: #000000; /* Cor de fundo do menu hambúrguer */
-        border-bottom: 1px solid #7b6e6e;
-    }
-    
-    .nav-links.active {
-        display: flex;
-    
-    
-    }
-    
-    .menu-toggle {
-        margin-left: -400px;
-        display: flex;
-    }
-}
-
-/* Layout Container */
-.layout-container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: space-between; /* Espaça os itens igualmente */
-    padding: 20px;
-    margin-top:7%;
-}
-
-/* Container */
-.container {
-    flex: 1; /* Faz o contêiner ocupar o máximo de espaço possível */
-    margin-right: 20px; /* Espaço entre o contêiner e a imagem */
-}
-
-/* Image Container */
-.image-container {
-    flex: 1; /* Faz a imagem ocupar o máximo de espaço possível */
-}
-
-.image-container img {
-    width: 100%; /* Ajusta a imagem para ocupar todo o espaço do contêiner */
-    margin: auto;
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
-}
-
-.logo{
-    margin-right: 10%;
-}
-
-@media (max-width: 600px){
-    .logo{
-        width: 100px;
-        margin: auto;
-    }
-}
-
-/* Estilo do botão */
+                /* Estilo do botão */
 .button {
     display: inline-block; /* Faz o botão se comportar como um bloco em linha */
     padding: 15px 45px; /* Espaçamento interno do botão */
@@ -198,71 +188,59 @@ nav {
     color: #fcfafa;
 }
 
-
-#img-servicos{
-    width: 50%;
-}
-/* Layout Container para "Quem somos" */
-#quemsomos {
+.content-container {
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    padding: 20px;
-    text-align: center;
-    margin-top: 7%;
+    flex-wrap: wrap;
+    margin: 200px 100px;
 }
 
-#quemsomos .title {
-    margin-bottom: 20px; /* Espaço abaixo do título */
+.content-container img {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 8px;
 }
 
-#quemsomos .title h1 {
-    margin: 0; /* Remove a margem padrão do <h1> */
-    margin-bottom: 30px;
+.text-content, .image-content {
+    flex: 1;
+    padding: 40px;
 }
 
-#quemsomos .content {
-    display: flex; /* Organiza o texto e a imagem lado a lado */
-    align-items: flex-start; /* Alinha o texto e a imagem no topo */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: left; /* Alinha o texto à esquerda */
-    gap: 20px; /* Espaço entre o texto e a imagem */
+.image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#quemsomos .text {
-    max-width: 600px; /* Limita a largura do texto */
-    
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#quemsomos .image-container {
-    flex-shrink: 0; /* Impede que a imagem encolha */
+.image-left .text-content {
+    order: 2;
 }
 
-#quemsomos .image-container img {
-    width: 100%; /* Ajusta a imagem para ocupar o espaço disponível */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Arredonda os cantos da imagem */
-}
-/* Estilo personalizado para o botão vazado */
-.btn-vazado {
-    border: 2px solid #44d474; /* Cor da borda */
-    color: #44d474; /* Cor do texto */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 4px; /* Bordas arredondadas */
-    padding: 15px 45px; /* Espaçamento interno do botão */
-    text-decoration: none; /* Remove o sublinhado (para links) */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito no texto */
-    
+.text-left .image-content {
+    order: 2;
 }
 
-.btn-vazado:hover {
-    background-color: #44d474; /* Cor de fundo ao passar o mouse */
-    color: #ffffff; /* Cor do texto ao passar o mouse */
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-content, .text-content {
+        padding: 10px;
+    }
 }
-.parceiros h1, p{
-    text-align: center;
-}
+
+
+
+
+
+
 
 
 
