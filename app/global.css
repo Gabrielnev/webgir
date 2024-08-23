@@ -181,6 +181,22 @@
     cursor: pointer; /* Cursor de mão ao passar o mouse */
 
 }
+.btn-vazado {
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    padding: 15px 45px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado (para links) */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 2px solid #44d474; /* Cor da borda */
+    color: #ffffff; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente */
+}
+.btn-vazado:hover {
+    background-color: #44d474; /* Cor do fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
 
 /* Estilo para o estado hover (quando o mouse está sobre o botão) */
 .button:hover {
@@ -369,6 +385,7 @@ footer {
     }
   }
   
+
 
 
 
