@@ -87,19 +87,24 @@
                 <h6>Nossos parceiros e apoiadores do negócio</h6>
             </div>
             <div id="parceiros" class="content-container text-left">
-
                 <div class="image-content">
-                    <a href="https://www.ufca.edu.br/"><img src="../public/ufca1.png" alt="Imagem 6"></a>
+                    <a href="https://www.ufca.edu.br/">
+                        <img src="../public/ufca-light.png" class="partner-image ufca" alt="UFCA">
+                    </a>
                 </div>
                 <div class="image-content">
-                    <a href="https://ifce.edu.br/crato"><img src="../public/if.png" alt="Imagem 5"></a>
+                    <a href="https://ifce.edu.br/crato">
+                        <img src="../public/if-light.png" class="partner-image if" alt="IF">
+                    </a>
                 </div>
                 <div class="image-content">
-                <a href="https://juazeirodonorte.ce.gov.br/secretaria.php?sec=17"> <img src="../public/amaju.png" alt="Imagem 4"></a>
-                
+                    <a href="https://juazeirodonorte.ce.gov.br/secretaria.php?sec=17">
+                        <img src="../public/amaju-light.jpeg" class="partner-image amaju" alt="AMAJU">
+                    </a>
                 </div>
             </div>
-
+            
+            
             <div id="contact" class="contato">
                 <h1>Agende uma reunião</h1>
                 <p>A partir de um clique você agendará uma reunião com os nossos consultores para falar sobre o seu negócio.</p>
@@ -194,6 +199,25 @@
         var navLinks = document.querySelector('.nav-links');
         navLinks.classList.toggle('active');
     }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function updatePartnerImages() {
+            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            
+            document.querySelectorAll('.partner-image').forEach(img => {
+                const baseSrc = img.src.split('/').slice(-1)[0];
+                const newSrc = baseSrc.replace(/-(light|dark)/, `-${theme}`);
+                img.src = `../public/${newSrc}`;
+            });
+        }
+
+        // Inicializa as imagens quando a página carrega
+        updatePartnerImages();
+
+        // Atualiza as imagens ao alternar o tema
+        document.getElementById('theme-toggle').addEventListener('click', updatePartnerImages);
+    });
 </script>
 
 </body>

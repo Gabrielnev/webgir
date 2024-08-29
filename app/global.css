@@ -511,3 +511,31 @@ nav {
 .nav-links a:hover {
     color: #ebedf1; /* Cor dos links quando passar o mouse */
 }
+
+
+
+/* Estilos para imagens de parceiros no tema claro */
+body.light-theme .partner-image.ufca {
+    content: url('../public/ufca-light.png');
+}
+
+body.light-theme .partner-image.if {
+    content: url('../public/if-light.png');
+}
+
+body.light-theme .partner-image.amaju {
+    content: url('../public/amaju-light.jpeg');
+}
+
+/* Estilos para imagens de parceiros no tema escuro */
+body.dark-theme .partner-image.ufca {
+    content: url('../public/ufca-dark.png');
+}
+
+body.dark-theme .partner-image.if {
+    content: url('../public/if-dark.png');
+}
+
+body.dark-theme .partner-image.amaju {
+    content: url('../public/amaju-dark.png');
+}
