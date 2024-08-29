@@ -1,4 +1,8 @@
 /* Definições básicas para o corpo e fundo */
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     background-color: #121212; /* Cor de fundo escura */
     color: #e0e0e0; /* Cor do texto clara */
@@ -55,10 +59,13 @@ input::placeholder {
 
 /* Menu de navegação */
 nav {
-    
     padding: 10px;
     border-bottom: 1px solid #44d474; /* Borda inferior do menu */
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: #000000;
+    width: 100vw;
 }
 
 .menu-toggle {
@@ -388,8 +395,8 @@ footer {
     }
   }
 .text-parceiros{
- text-align: center;
- font-size: 30px;
+    text-align: center;
+    font-size: 30px;
 }
 .text-parceiros h3{
     text-align: center;
