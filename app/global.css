@@ -368,7 +368,10 @@ footer {
     margin-top: 80px;
     color: white;
   }
-  
+  .text-parceiros{
+    text-align: center;
+    font-size: 2em;
+   }
   @media (max-width: 768px) {
     footer .metodo,
     footer .redessociais {
@@ -384,7 +387,23 @@ footer {
       text-align: center;
     }
   }
+.text-parceiros{
+ text-align: center;
+ font-size: 30px;
+}
+.text-parceiros h3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; /* Negrito no texto */
+   }
+  .content-container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+    margin-top: 20px; /* Espaço entre o texto e as imagens */
+  }
 
-
-
-  
+  .image-content img {
+    max-width: 100%; /* Ajusta o tamanho da imagem para não ultrapassar o contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+  }
