@@ -447,6 +447,12 @@ body.dark-theme .btn-theme{
 body.dark-theme .btn-theme i{
     color: rgb(104, 104, 102);
 }
+body.light-theme .menu-toggle .bar{
+    background-color: rgb(0, 0, 0);
+}
+body.dark-theme .nav-links.active{
+    background-color: #000000;
+}
 /* Botão de alternância de tema */
 .btn-theme {
     background-color: #000000;
@@ -488,7 +494,7 @@ nav {
     
     .nav-links.active {
         display: flex;
-        background-color: #f0ecec; /* Cor de fundo quando o menu está ativo */
+        background-color: #c1d7dd; /* Cor de fundo quando o menu está ativo */
     }
 }
 
