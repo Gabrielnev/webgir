@@ -55,7 +55,10 @@ input::placeholder {
 
 /* Menu de navegação */
 nav {
-    
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
     padding: 10px;
     border-bottom: 1px solid #44d474; /* Borda inferior do menu */
     position: relative;
