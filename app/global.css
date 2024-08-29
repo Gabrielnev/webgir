@@ -39,19 +39,6 @@ a:hover {
     border-radius: 8px;
 }
 
-/* Botões */
-button {
-    background-color: #333333; /* Cor de fundo dos botões */
-    color: #ffffff; /* Cor do texto dos botões */
-    border: 1px solid #444444; /* Cor da borda dos botões */
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555555; /* Cor de fundo dos botões ao passar o mouse */
-}
 
 /* Formulários */
 input, textarea {
@@ -453,17 +440,24 @@ body.light-theme .container {
     background-color: #f5f5f5; /* Cor de fundo dos containers */
 }
 
+
+body.dark-theme .btn-theme{
+    background-color: white;
+}
+body.dark-theme .btn-theme i{
+    color: rgb(104, 104, 102);
+}
 /* Botão de alternância de tema */
 .btn-theme {
-    background-color: #44d474;
+    background-color: #000000;
     color: #ffffff;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
+    border-radius: 50%;
+    padding: 13px 15px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.btn-theme:hover {
-    background-color: #36a45f;
+.btn-theme i {
+        color: rgb(180, 180, 167);
 }
