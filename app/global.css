@@ -424,11 +424,11 @@ body.light-theme h6 {
 }
 
 body.light-theme a {
-    color: #1e88e5; /* Cor dos links */
+    color: #090a0a; /* Cor dos links */
 }
 
 body.light-theme a:hover {
-    color: #0056b3; /* Cor dos links quando passar o mouse */
+    color: #293d53; /* Cor dos links quando passar o mouse */
 }
 
 body.light-theme .container {
