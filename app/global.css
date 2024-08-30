@@ -1,3 +1,4 @@
+
 /* Definições básicas para o corpo e fundo */
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -557,4 +558,76 @@ body.light-theme .logo {
 /* Estilos para imagens de logo no tema escuro */
 body.dark-theme .logo {
     content: url('../public/logo-dark.png');
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustar o menu para telas menores */
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Ocultar por padrão */
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar quando ativado */
+    }
+
+    /* Menu toggle */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Ajustar imagem do logo */
+    .logo {
+        width: 150px; /* Ajustar conforme necessário */
+    }
+
+    /* Ajustar tamanho das imagens */
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar layout do botão */
+    .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    .logo {
+        width: 120px; /* Reduzir tamanho do logo em telas muito pequenas */
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .text-content h1 {
+        font-size: 24px; /* Ajustar tamanho do texto */
+    }
+
+    .text-content h5 {
+        font-size: 16px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
 }
