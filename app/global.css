@@ -1,5 +1,6 @@
 /* Definições básicas para o corpo e fundo */
 body {
+    transition: background-color 0.5s ease, color 0.5s ease;
     background-color: #000000; /* Cor de fundo escura */
     color: #e0e0e0; /* Cor do texto clara */
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -55,6 +56,7 @@ input::placeholder {
 
 /* Menu de navegação */
 nav {
+    transition: background-color 0.5s ease, color 0.5s ease;
     position: fixed;
     top: 0;
     width: 100vw;
