@@ -520,12 +520,16 @@ body.light-theme .partner-image.ufca {
 }
 
 body.light-theme .partner-image.if {
-    content: url('../public/if-light.png');
+    content: url('../public/ifce.png');
 }
 
 body.light-theme .partner-image.amaju {
     content: url('../public/amaju-light.jpeg');
 }
+body.light-theme .partner-image.logo {
+    content: url('../public/logo-light.png');
+}
+
 
 /* Estilos para imagens de parceiros no tema escuro */
 body.dark-theme .partner-image.ufca {
@@ -538,4 +542,7 @@ body.dark-theme .partner-image.if {
 
 body.dark-theme .partner-image.amaju {
     content: url('../public/amaju-dark.png');
+}
+body.dark-theme .partner-image.logo {
+    content: url('../public/logo-dark.png');
 }
