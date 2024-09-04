@@ -219,7 +219,7 @@ nav {
 .content-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 200px 100px;
+    margin: 20% 10%;
 }
 
 .content-container img {
@@ -609,25 +609,3 @@ body.dark-theme .logo {
 }
 
 /* Responsividade para dispositivos muito pequenos */
-@media (max-width: 480px) {
-    .logo {
-        width: 120px; /* Reduzir tamanho do logo em telas muito pequenas */
-    }
-
-    .button {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .text-content h1 {
-        font-size: 24px; /* Ajustar tamanho do texto */
-    }
-
-    .text-content h5 {
-        font-size: 16px;
-    }
-
-    .text-content p {
-        font-size: 14px;
-    }
-}
