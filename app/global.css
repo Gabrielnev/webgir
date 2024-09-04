@@ -1,4 +1,7 @@
-
+html{
+    scroll-behavior: smooth;
+    transition: all 10s ease-in-out;
+}
 /* Definições básicas para o corpo e fundo */
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -504,17 +507,46 @@ nav {
         background-color: #c1d7dd; /* Cor de fundo quando o menu está ativo */
     }
 }
-
-/* Estilo para os links do menu */
 .nav-links a {
+    position: relative; /* Necessário para o pseudo-elemento */
     color: #ffffff; /* Cor do texto dos links */
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
     padding: 15px;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #08ee00; /* Cor da barra */
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Expande a barra ao passar o mouse */
+}
+
+.nav-links a:hover {
+    color: #ebedf1; /* Cor dos links quando passar o mouse */
+}
+
+/* Estilo para o link ativo */
+.nav-links li a.active::after {
+    width: 100%;
+    background-color: #10ee00; /* Cor da barra para o link ativo */
+}
+
+.nav-links li a.active {
+    color: #08ee00; /* Cor do texto quando ativo */
+}
 .nav-links a:hover {
     color: #ebedf1; /* Cor dos links quando passar o mouse */
 }
@@ -606,11 +638,4 @@ body.dark-theme .logo {
         width: 100%;
         text-align: center;
     }
-}
-
-/* Responsividade para dispositivos muito pequenos */
-.nav-links li a.active {
-    border-bottom: 2px solid #10ee00; /* Cor e espessura da barra */
-    color: #08ee00; /* Cor do texto quando ativo */
-    transition: all 0.3s ease; /* Suaviza a transição ao mudar a seção */
 }
