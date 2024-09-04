@@ -609,3 +609,8 @@ body.dark-theme .logo {
 }
 
 /* Responsividade para dispositivos muito pequenos */
+.nav-links li a.active {
+    border-bottom: 2px solid #10ee00; /* Cor e espessura da barra */
+    color: #08ee00; /* Cor do texto quando ativo */
+    transition: all 0.3s ease; /* Suaviza a transição ao mudar a seção */
+}

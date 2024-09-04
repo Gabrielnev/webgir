@@ -81,3 +81,32 @@ updatePartnerImages();
 // Atualiza as imagens ao alternar o tema
 document.getElementById('theme-toggle').addEventListener('click', updatePartnerImages);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("main > div[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    function changeActiveLink() {
+        let currentSection = "";
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(currentSection)) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", changeActiveLink);
+    window.addEventListener("load", changeActiveLink); // para garantir que ao carregar a página a seção seja destacada
+});
