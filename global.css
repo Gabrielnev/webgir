@@ -8,8 +8,8 @@ body {
     background-color: #000000; /* Cor de fundo escura */
     color: #e0e0e0; /* Cor do texto clara */
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-font-size: 20px;
-text-align: justify;
+    font-size: 20px;
+    text-align: justify;
 }
 body h6{
     font-size:17px;
@@ -555,15 +555,15 @@ nav {
 
 /* Estilos para imagens de parceiros no tema claro */
 body.light-theme .partner-image.ufca {
-    content: url('../public/ufca-light.png');
+    content: url('./ufca-light.png');
 }
 
 body.light-theme .partner-image.if {
-    content: url('../public/ifce.png');
+    content: url('./ifce.png');
 }
 
 body.light-theme .partner-image.amaju {
-    content: url('../public/amaju-light.jpeg');
+    content: url('./amaju-light.jpeg');
 }
 
 
