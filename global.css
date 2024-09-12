@@ -7,24 +7,37 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
     background-color: #000000; /* Cor de fundo escura */
     color: #e0e0e0; /* Cor do texto clara */
-    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 20px;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    font-size: 20px;
+
+}
+
+p{
     text-align: justify;
+    font-size: 0.8em;
 }
-body h6{
-    font-size:17px;
+.titulo{
+    font-size: 2em;
 }
+.texto{
+    font-size: 0.8em;
+    line-height: 1.8; 
+    color: #757788;
+}
+
 /* Tema claro (padrão) */
 body.light-theme nav,
 body.light-theme footer {
     background-color: white; /* ou qualquer cor desejada para o tema claro */
-    color: black;
+
 }
 
 /* Tema escuro */
 body.dark-theme nav,
 body.dark-theme footer {
     background-color: rgb(0, 0, 0); /* Cor desejada para o fundo do nav e footer no tema escuro */
+}
+body.dark-theme .texto{
+    color: white;
 }
 
 
@@ -33,14 +46,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #f5f5f5; /* Cores dos cabeçalhos mais claras */
 }
 
-/* Links */
-a {
-    color: #bb86fc; /* Cor dos links */
-}
 
-a:hover {
-    color: #82b1ff; /* Cor dos links quando passar o mouse */
-}
+
 
 /* Fundo dos containers */
 .container {
@@ -72,8 +79,9 @@ nav {
     z-index: 1000;
     padding: 10px;
     background-color: #000000;
-    border-bottom: 1px solid #44d474; /* Borda inferior do menu */
+    box-shadow: 0 4px 15px -4px rgba(0, 0, 0, 0.2);
 }
+
 
 .menu-toggle {
     display: none;
@@ -114,8 +122,8 @@ nav {
     cursor: pointer; /* Cursor de mão ao passar o mouse */
 }
 
-.nav-links a:hover {
-    color: #ebedf1; /* Cor dos links do menu ao passar o mouse */
+#nav-links a:hover {
+    color: #7971EA; /* Cor dos links do menu ao passar o mouse */
 }
 
 /* Responsividade */
@@ -280,11 +288,7 @@ nav {
     color: #d8d8d8;
 }
 
-.contato p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #d8d8d8;
-}
+
 
 .contato button {
     width: 100%;
@@ -310,11 +314,6 @@ nav {
     .contato h1 {
         font-size: 2.5em;
     }
-
-    .contato p {
-        font-size: 1em;
-    }
-
     .contato button {
         font-size: 1.2em;
         padding: 15px;
@@ -349,12 +348,12 @@ footer {
     padding: 20px;
     margin-top: 100px;
     background-color: #000000;
-    color: white;
+    
   }
   
-  footer .metodo,
-  footer .redessociais {
-    width: 60%;
+  footer .metodo {
+    margin-left: 10%;
+    width: 40%;
   }
   
   footer .redessociais {
@@ -362,7 +361,6 @@ footer {
     text-align: left;
     margin-left: 10px;
   }
-  
   footer .redessociais a {
     display: block;
     margin-bottom: 10px;
@@ -439,7 +437,8 @@ body.light-theme h6 {
 }
 
 body.light-theme a {
-    color: #090a0a; /* Cor dos links */
+    color: #000000; /* Cor dos links */
+    line-height: 1.6;
 }
 
 body.light-theme a:hover {
@@ -478,16 +477,6 @@ body.dark-theme .nav-links.active{
         color: rgb(180, 180, 167);
 }
 
-/* Estilo base para o menu de navegação */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 1000;
-    padding: 10px;
-    background-color: inherit; /* A cor de fundo padrão */
-    border-bottom: 1px solid #44d474; /* Borda inferior do menu */
-}
 
 /* Menu de navegação para dispositivos móveis */
 @media (max-width: 768px) {
@@ -509,7 +498,6 @@ nav {
 }
 .nav-links a {
     position: relative; /* Necessário para o pseudo-elemento */
-    color: #ffffff; /* Cor do texto dos links */
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
@@ -525,7 +513,7 @@ nav {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #08ee00; /* Cor da barra */
+    background-color: #7971EA; /* Cor da barra */
     transition: all 0.4s ease;
     transform: translateX(-50%);
 }
@@ -534,21 +522,16 @@ nav {
     width: 100%; /* Expande a barra ao passar o mouse */
 }
 
-.nav-links a:hover {
-    color: #ebedf1; /* Cor dos links quando passar o mouse */
-}
+
 
 /* Estilo para o link ativo */
 .nav-links li a.active::after {
     width: 100%;
-    background-color: #10ee00; /* Cor da barra para o link ativo */
+    background-color: #7971EA; /* Cor da barra para o link ativo */
 }
 
 .nav-links li a.active {
-    color: #08ee00; /* Cor do texto quando ativo */
-}
-.nav-links a:hover {
-    color: #ebedf1; /* Cor dos links quando passar o mouse */
+    color: #7971EA; /* Cor do texto quando ativo */
 }
 
 
@@ -638,4 +621,8 @@ body.dark-theme .logo {
         width: 100%;
         text-align: center;
     }
+}
+#span{
+    margin: 0 auto;
+    padding: 30px;
 }
