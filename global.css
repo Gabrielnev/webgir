@@ -16,7 +16,8 @@ p{
     font-size: 0.8em;
 }
 .titulo{
-    font-size: 2em;
+    font-size: 1.6em;
+    margin-bottom: 0;
 }
 .texto{
     font-size: 0.8em;
@@ -141,8 +142,6 @@ nav {
     
     .nav-links.active {
         display: flex;
-    
-    
     }
     
     .menu-toggle {
@@ -152,6 +151,7 @@ nav {
 }
 #inicio{
     margin-top: 15vh;
+
 }
 /* Layout Container */
 .layout-container {
@@ -277,7 +277,7 @@ nav {
 
 .contato {
     text-align: center;
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -286,6 +286,10 @@ nav {
     font-size: 3em;
     margin-bottom: 20px;
     color: #d8d8d8;
+}
+.contato-texto{
+    margin: 0 10%;
+
 }
 
 
@@ -538,11 +542,12 @@ body.dark-theme .nav-links.active{
 
 /* Estilos para imagens de parceiros no tema claro */
 body.light-theme .partner-image.ufca {
-    content: url('./ufca-light.png');
+    content: url('./ufca-logo.png');
 }
 
 body.light-theme .partner-image.if {
     content: url('./ifce.png');
+    
 }
 
 body.light-theme .partner-image.amaju {
@@ -556,7 +561,7 @@ body.dark-theme .partner-image.ufca {
 }
 
 body.dark-theme .partner-image.if {
-    content: url('../public/logoifcrato.png');
+    content: url('../public/ifce-drak.png');
 }
 
 body.dark-theme .partner-image.amaju {
