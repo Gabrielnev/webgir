@@ -364,14 +364,17 @@ footer {
     width: 30%;
     text-align: left;
     margin-left: 10px;
+    margin-top: 10px;
+
   }
   footer .redessociais a {
     display: block;
-    margin-bottom: 10px;
-    color: #138496;
+    margin-bottom: 30px;
     text-decoration: none;
+    font-size: 0.8em;
+    color: #276f91;
   }
-  
+ 
   footer .redessociais a img {
     width: 20px;
     margin-right: 10px;
@@ -440,7 +443,7 @@ body.light-theme h6 {
     color:black; /* Cores dos cabeçalhos mais escuras */
 }
 
-body.light-theme a {
+body.light-theme nav a {
     color: #000000; /* Cor dos links */
     line-height: 1.6;
 }
