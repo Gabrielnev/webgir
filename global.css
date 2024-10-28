@@ -398,7 +398,10 @@ footer {
       width: 100%;
       text-align: center;
     }
-  
+    
+    footer .metodo {
+        margin-left: 0%;
+      }
     footer .redessociais {
       margin-top: 20px;
     }
