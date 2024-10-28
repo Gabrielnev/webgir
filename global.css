@@ -316,8 +316,8 @@ nav {
         width: 80%;
     }
 
-    .contato h1 {
-        font-size: 2.5em;
+    .contato h3 {
+        font-size: 1.2em;
     }
     .contato button {
         font-size: 1.2em;
@@ -329,9 +329,8 @@ nav {
     .contato {
         width: 90%;
     }
-
-    .contato h1 {
-        font-size: 2em;
+    .contato h3 {
+        font-size: 1.2em;
     }
 
     .contato p {
@@ -408,6 +407,11 @@ footer {
       text-align: center;
     }
   }
+
+
+
+  /* PARCERIAS */
+
 .text-parceiros .texto{
     text-align: center;
     font-size: 0.4em;
@@ -415,8 +419,22 @@ footer {
 .text-parceiros h3{
     text-align: center;
     font-weight: bold; /* Negrito no texto */
-   }
-  .content-container {
+}
+
+
+@media (max-width: 768px) {
+    .text-parceiros .texto{
+        text-align: center;
+        font-size: 0.4em;
+    }
+    .text-parceiros h3{
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: bold; /* Negrito no texto */
+    }
+}
+
+.content-container {
     display: flex;
     justify-content: center; /* Centraliza as imagens horizontalmente */
     gap: 10px; /* Espaço entre as imagens */
