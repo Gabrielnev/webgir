@@ -283,7 +283,7 @@ nav {
 }
 
 .contato h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #d8d8d8;
 }
@@ -300,7 +300,7 @@ nav {
     border-radius: 50px;
     background-color: #17A2B8;
     color: white;
-    font-size: 1.5em;
+    font-size: 0.9em;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -407,9 +407,9 @@ footer {
       text-align: center;
     }
   }
-.text-parceiros{
- text-align: center;
- font-size: 30px;
+.text-parceiros .texto{
+    text-align: center;
+    font-size: 0.4em;
 }
 .text-parceiros h3{
     text-align: center;
